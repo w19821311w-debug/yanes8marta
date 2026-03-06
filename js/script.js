@@ -5,28 +5,30 @@ const darkTiles  = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/da
 lightTiles.addTo(map);
 
 const places = [
-    { coords: [53.214938, 63.628656], title: "Первое объятие", desc: "двор где впервые я лег на тебя", img:"img/obyatie.jpg" },
-    { coords: [53.238607, 63.673581], title: "Первый магазин", desc: "Первая прогулка и первый магаз", video: "video/magaz.mp4" },
-    { coords: [53.234998, 63.669866], title: "Двор алкашей", desc: "Там была любовь", img: "img/alkashi.jpg" },
-    { coords: [53.236156, 63.668905], title: "Платье", desc: "С кайфом вышли погулять", video: "video/platbe.mp4" },
-    { coords: [53.242217, 63.678673], title: "Северный отдел", desc: "Зато круто погуляли)", img: "img/otdel.jpg" },
-    { coords: [53.238306, 63.680012], title: "Пенис", desc: "Ну просто пенис чё", img: "img/penis.jpg" },
-    { coords: [53.235600, 63.668846], title: "Соевое мясо", desc: "Дегустация дерьма", videos: ["video/govno1.mp4", "video/govno2.mp4"] },
-    { coords: [53.238095, 63.681222], title: "Первый поцелуй", desc: "Яна смогла!!!!", img: "img/vanna.jpg" },
-    { coords: [53.237554, 63.680199], title: "Дом Яны", desc: "легенда", videos: ["video/pbyanb.mp4", "video/pbyanb2.mp4"] },
-    { coords: [53.197951, 63.646775], title: "Триатлон парк", desc: "ну иногда бывали", img: "img/naberezh.jpg" },
-    { coords: [53.243911, 63.703028], title: "Поле", desc: "должна была быть романтика", videos: ["video/pole.mp4", "video/pole2.mp4", "video/pole3.mp4"] },
-    { coords: [53.239432, 63.675057], title: "Легендарное кресло", desc: "", img: "img/kreslo.jpg" },
-    { coords: [53.190893, 63.595584], title: "Кинорум", desc: "тут происходила грязь", img: "img/kinor.jpg" },
-    { coords: [53.173011, 63.613927], title: "Свадьба", desc: "первое мероприятие вместе", img: "img/svadba.jpg" },
-    { coords: [53.234151, 63.674797], title: "Улица", desc: "частенько шли в ливень", videos: ["video/ulica.mp4", "video/ulica2.mp4"] },
-    { coords: [53.226304, 63.636445], title: "Футбол", desc: "твои первые разы", img: "img/football.jfif" },
-    { coords: [53.206241, 63.648117], title: "Набережная", desc: "ты ругалась", img: "img/rugalasb.jpg" },
-    { coords: [53.238899, 63.674270], title: "Дом Вани", desc: "иногда ночевали", img: "img/moidom.jfif" },
-    { coords: [53.240820, 63.679668], title: "JamBakery", desc: "бывало кушали", img: "img/jamb.jfif" },
-    { coords: [53.228266, 63.663265], title: "11", desc: "рвало кое кого ужасно", img: "img/odinad.jfif" },
-    { coords: [53.239508, 63.676813], title: "3 Школа", desc: "Яна шумела", video: "video/school.mp4" },
-    { coords: [53.24001219508713, 63.614864048183016], title: "Каток", desc: "за год ниче не поменялось", videos: ["video/katok1.mp4","video/katok2.mp4"] }
+    { coords: [53.214938, 63.628656], title: "Первое объятие", desc: "двор где впервые я лег на тебя", img:"obyatie.jpg" },
+    { coords: [53.238607, 63.673581], title: "Первый магазин", desc: "Первая прогулка и первый магаз", video: "magaz.mp4" },
+    { coords: [53.234998, 63.669866], title: "Двор алкашей", desc: "Там была любовь", img: "alkashi.jpg" },
+    { coords: [53.236156, 63.668905], title: "Платье", desc: "С кайфом вышли погулять", video: "platbe.mp4" },
+    { coords: [53.242217, 63.678673], title: "Северный отдел", desc: "Зато круто погуляли)", img: "otdel.jpg" },
+    { coords: [53.238306, 63.680012], title: "Пенис", desc: "Ну просто пенис чё", img: "penis.jpg" },
+    { coords: [53.235600, 63.668846], title: "Соевое мясо", desc: "Дегустация дерьма", videos: ["govno1.mp4", "govno2.mp4"] },     
+    { coords: [53.238095, 63.681222], title: "Первый поцелуй", desc: "Яна смогла!!!!", img: "vanna.jpg" },
+    { coords: [53.237554, 63.680199], title: "Дом Яны", desc: "легенда", videos: ["pbyanb.mp4", "pbyanb2.mp4"] },
+    { coords: [53.197951, 63.646775], title: "Триатлон парк", desc: "ну иногда бывали", img: "naberezh.jpg" },
+    { coords: [53.243911, 63.703028], title: "Поле", desc: "должна была быть романтика", videos: ["pole.mp4", "pole2.mp4", "pole3.mp4"] },
+    { coords: [53.239432, 63.675057], title: "Легендарное кресло", desc: "", img: "kreslo.jpg" },
+    { coords: [53.190893, 63.595584], title: "Кинорум", desc: "тут происходила грязь", img: "kinor.jpg" },   
+    { coords: [53.173011, 63.613927], title: "Свадьба", desc: "первое мероприятие вместе", img: "svadba.jpg" },
+    { coords: [53.234151, 63.674797], title: "Улица", desc: "частенько шли в ливень", videos: ["ulica.mp4", "ulica2.mp4"] },
+    { coords: [53.226304, 63.636445], title: "Футбол", desc: "твои первые разы", img: "football.jfif" },
+    { coords: [53.206241, 63.648117], title: "Набережная", desc: "ты ругалась", img: "rugalasb.jpg" },
+    { coords: [53.238899, 63.674270], title: "Дом Вани", desc: "иногда ночевали", img: "moidom.jfif" },
+    { coords: [53.240820, 63.679668], title: "JamBakery", desc: "бывало кушали", img: "jamb.jfif" }, 
+    { coords: [53.228266, 63.663265], title: "11", desc: "рвало кое кого ужасно", img: "odinad.jfif" },
+    { coords: [53.239508, 63.676813], title: "3 Школа", desc: "Яна шумела", video: "school.mp4" },
+    { coords: [53.24001219508713, 63.614864048183016], title: "Каток", desc: "за год ниче не поменялось", videos: ["katok1.mp4","katok2.mp4"] },
+    { coords: [53.241816, 63.683633], title: "Улица", desc: "часто попадали в ливень", img: "ulica3.jpg" },
+    { coords: [53.240005, 63.680827], title: "Улица", desc: "часто попадали в ливень", img: "ulica4.jpg" }
 ];
 const markerObjects = [];
 
@@ -86,4 +88,5 @@ function update(){
     hearts.forEach((h,i)=>{ h.y-=h.speed; drawHeart(h); if(h.y+h.size<0) hearts.splice(i,1); });
     requestAnimationFrame(update);
 }
+
 update();

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Карта нашей истории ❤️</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="search-container">
+    <input type="text" id="map-search" placeholder="Поиск места..." oninput="showSuggestions()">
+    <button class="theme-btn" onclick="toggleTheme()" id="theme-icon">🌙</button>
+    <div id="suggestions" class="suggestions-list"></div>
+</div>
+
+
+<button class="random-btn" onclick="goToRandomPlace()">Где мы были?</button>
+
+<div id="video-overlay" onclick="closeVideo()">
+    <div class="video-container" onclick="event.stopPropagation()">
+        <span class="close-btn" onclick="closeVideo()">&times;</span>
+        <iframe id="video-iframe" width="100%" height="100%" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div id="full-image-overlay" onclick="this.style.display='none'">
+    <span class="close-btn" style="position:absolute; top:20px; right:20px;">&times;</span>
+    <img id="full-res-img" src="" alt="">
+</div>
+
+<div id="map"></div>
+<canvas id="heartCanvas"></canvas>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+<script src="js/script.js" defer></script>
+
+</body>
+</html>

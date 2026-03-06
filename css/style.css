@@ -113,11 +113,10 @@ body {
 }
 
 .popup-content img { 
-    width: 100% !important; 
-    height: auto !important;      /* Авто-высота */
-    max-height: 500px;            /* Максимальная высота, чтобы не занимало весь экран */
-    object-fit: contain;          /* Показываем всё изображение без обрезки */
-    border-radius: 12px; 
+    width: 100% !important;       /* ширина под попап */
+    height: 400px !important;      /* фиксированная высота, можешь изменить */
+    object-fit: cover;             /* чтобы картинка не деформировалась */
+    border-radius: 20px; 
     cursor: pointer;
     display: block;
 }
@@ -214,4 +213,5 @@ body.dark-mode { background: #1a1a1a; }
 .dark-mode .header-box { background: rgba(30, 30, 30, 0.95); }
 .dark-mode .header-box h1 { color: white; }
 .dark-mode .leaflet-popup-content-wrapper { background: #222; color: white; }
+
 .dark-mode .random-btn { background: #333; }

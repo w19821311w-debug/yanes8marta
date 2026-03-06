@@ -27,8 +27,8 @@ const places = [
     { coords: [53.228266, 63.663265], title: "11", desc: "рвало кое кого ужасно", img: "img/odinad.jfif" },
     { coords: [53.239508, 63.676813], title: "3 Школа", desc: "Яна шумела", video: "video/school.mp4" },
     { coords: [53.24001219508713, 63.614864048183016], title: "Каток", desc: "за год ниче не поменялось", videos: ["video/katok1.mp4","video/katok2.mp4"] },
-    { coords: [53.241816, 63.683633], title: "Улица", desc: "часто попадали в ливень", img: "img/ulica3.jpg" },
-    { coords: [53.240005, 63.680827], title: "Улица", desc: "часто попадали в ливень", img: "img/ulica4.jpg" }
+    { coords: [53.241816, 63.683633], title: "Улица", desc: "часто попадали в ливень", img: "img/ulica3.jfif" },
+    { coords: [53.240005, 63.680827], title: "Улица", desc: "часто попадали в ливень", img: "img/ulica4.jfif" }
 ];
 const markerObjects = [];
 
@@ -90,4 +90,5 @@ function update(){
 }
 
 update();
+
 
